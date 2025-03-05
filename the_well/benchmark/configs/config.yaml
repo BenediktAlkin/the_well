@@ -1,13 +1,13 @@
 defaults:
   - trainer: defaults
   - optimizer: adam
-  - experiment: ???
-  - server: ???
+  - experiment: unet_convnext
+  - server: local
   - resume_overrides: no_overrides
 data:
   n_steps_input: 4
   n_steps_output: 1
 # model:
 #   gradient_checkpointing: False
-data_workers: 14
+data_workers: 0
 wandb_project_name: "the_well_extended_again"
